@@ -1,3 +1,4 @@
+
 const CSVToJSON = require('csvtojson');
 const axios = require('axios')
 
@@ -9,7 +10,7 @@ CSVToJSON().fromFile('Customer.csv')
         // users is a JSON array
         // log the JSON array
         //console.log(users);
-       // console.log(users[0])
+       
         
 console.log(users);
 //console.log(users[0])
@@ -25,10 +26,11 @@ console.log(jsonCustomer[1]);
     'x-encrypted-key':'625eb5a345a967b0ed7b5418'}
 };
 
-axios.post('https://lirs.dev.app.nipige.com/cap/users/customer', jsonCustomer[6], options)
+axios.post('https://lirs.dev.app.nipige.com/cap/users/customer', jsonCustomer[8], options)
   .then((res) => {
    console.log("RESPONSE ==== : ", res);
    console.log(res.data);
+   
  })
  .catch((err) => {
    console.log("ERROR: ====", err);
