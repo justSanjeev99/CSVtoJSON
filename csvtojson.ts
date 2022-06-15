@@ -12,22 +12,27 @@ CSVToJSON().fromFile('Customer.csv')
         //console.log(users);
        
         
-console.log(users);
+//console.log(users);
 //console.log(users[0])
-//const  array = users;
-//console.log(array)
-const jsonCustomer = users.map(item => JSON.stringify(item))
-console.log(jsonCustomer);
-console.log(jsonCustomer[1]);
 
+const jsonCustomer = users.map(item => JSON.stringify(item))
+
+console.log(jsonCustomer);
+//console.log(jsonCustomer[1]);
+ 
+const payload = jsonCustomer;
+//                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  console.log(payload)
  const options = {
     headers : { 
     'Content-Type': 'application/json',
     'x-encrypted-key':'625eb5a345a967b0ed7b5418'}
 };
 
-axios.post('https://lirs.dev.app.nipige.com/cap/users/customer', jsonCustomer[8], options)
+
+for (let i = 0; i < payload.length; i++) {
+ axios.post('https://lirs.dev.app.nipige.com/cap/users/customer',payload[i] , options)
   .then((res) => {
+  
    console.log("RESPONSE ==== : ", res);
    console.log(res.data);
    
@@ -36,9 +41,9 @@ axios.post('https://lirs.dev.app.nipige.com/cap/users/customer', jsonCustomer[8]
    console.log("ERROR: ====", err);
  })
 
-  
-    }).catch(err => {
+  }
+    })
+    .catch(err => {
         // log error if any
         console.log(err);
     });
-
