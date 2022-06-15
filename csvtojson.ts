@@ -16,8 +16,7 @@ CSVToJSON().fromFile('Customer.csv')
 //console.log(users[0])
 
 const jsonCustomer = users.map(item => JSON.stringify(item))
-
-console.log(jsonCustomer);
+//console.log(jsonCustomer);
 //console.log(jsonCustomer[1]);
  
 const payload = jsonCustomer;
@@ -25,12 +24,11 @@ const payload = jsonCustomer;
  const options = {
     headers : { 
     'Content-Type': 'application/json',
-    'x-encrypted-key':'625eb5a345a967b0ed7b5418'}
+    'x-encrypted-key':'62726568a2e7d713d89e4357'}
 };
 
-
 for (let i = 0; i < payload.length; i++) {
- axios.post('https://lirs.dev.app.nipige.com/cap/users/customer',payload[i] , options)
+ axios.post('https://dev.app.tekatime.com/cap/users/customer',payload[i] , options)
   .then((res) => {
   
    console.log("RESPONSE ==== : ", res);
