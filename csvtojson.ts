@@ -4,7 +4,7 @@ const axios = require('axios')
 
 
 // convert users.csv file to JSON array
-CSVToJSON().fromFile('Customer.csv')
+CSVToJSON().fromFile('newcustomer.csv')
     .then(users => {
 
         // users is a JSON array
