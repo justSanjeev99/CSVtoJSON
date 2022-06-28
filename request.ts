@@ -1,16 +1,17 @@
-// const axios = require('axios')
-// const fs = require("fs");
-// const { parse } = require("csv-parse");
-// const CSVToJSON = require('csvtojson');
+/*const axios = require('axios')
+const fs = require("fs");
+const { parse } = require("csv-parse");
+const CSVToJSON = require('csvtojson');
 
-// //const users = [];
-// fs.createReadStream("./Customer.csv")
-//   .pipe(parse({ delimiter: ",", from_line: 2 }))
-//   .on("data", function (row) {
+const users = [];
+fs.createReadStream("./Customer.csv")
+  .pipe(parse({ delimiter: ",", from_line: 2 }))
+  .on("data", function (row) {
 //    // console.log(row);
 //     //console.log(row[0]);
-
-//     let data =  {
+        users.push[row];
+        console.log(users)
+//     */let data =  
 //     "name": {
 //         "first": row[0],
 //         "last": row[1]
@@ -44,10 +45,10 @@
   
 // console.log(data[1]);
 
-//   })
-//   .on("end", function () {
-//     console.log("finished");
-//   })
-//   .on("error", function (error) {
-//     console.log(error.message);
-//   });
+ /* })
+  .on("end", function () {
+    console.log("finished");
+  })
+  .on("error", function (error) {
+    console.log(error.message);
+  });*/
