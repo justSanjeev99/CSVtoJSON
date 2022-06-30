@@ -1,6 +1,5 @@
-user._id,user.category,tenant,description,amount,amountType.key,amountType.value,transactionRef,expireAt,meta
-62b1a3e8a2b2814b6cef2a5a,CUSTOMER,62726568a2e7d713d89e4357,ADDED SOME AMOUNT,100,10100,PROMOTIONAL,PROMOTIONAL,null,{}
-
+name.first,name.last,authentication.securityQuestions.question,authentication.securityQuestions.answer,authentication.userName,authentication.phone,authentication.email,authentication.password,referralCustomerNo,PROMOTIONAL_AMOUNT,AKSHAY_PATRA_AMOUNT,CASHBACK_AMOUNT
+qqswdsak,Das,what is your first school,no,vqqqawkadaash,9721121105,vikas1wzkdaassh@gmail.com,123456,NPCS0255,300,300
 
 
 
